@@ -1,0 +1,46 @@
+<html>
+<head>
+<title> Identifikasi </title>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+<div class="jumbotron jumbotron-fluid" >
+  <div class="container" >
+    <h2 class="display-4">Identifikasi Kematangan Buah Labu Siam</h2>
+  </div>
+</div>
+
+
+
+
+
+<body class ="text-center">
+<div class="container">
+    <div class="row">
+		<div class="col-md-4 col-md-offset-4">
+    		<div class="panel panel-default">
+                <form class ="p-3 text-center" action="/" method="POST" enctype="multipart/form-data">
+
+    <input class="form-control" type="file" name="image"> <br>
+    <input class="btn btn-success mt-3" type="submit" value="Identifikasi">
+    <br></form>
+
+    {% if prediction == 0%}
+    <img class="mb-4" src="{{ image_loc }}" alt="" width="200" height="200">
+    <h5>Hasil identifikasi adalah : Labu siam Tua</h5>
+    {%else%}
+    <h5>Hasil identifikasi adalah : Labu siam Muda</h5>
+    {%endif%}
+
+
+</div></div>
+</div>
+</div>
+
+
+</body>
+</html>
+
