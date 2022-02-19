@@ -6,6 +6,7 @@ import rgb2hsi
 import numpy as np
 from skimage import feature
 from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import DistanceMetric
 import pickle
 
 app= Flask(__name__)
